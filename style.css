@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --background-color: #2C3333; 
+    --background-color-secondary: #2E4F4F; 
+    --border-color: #CBE4DE; 
+    --font-color: #dcdcdc ; 
+    --highlight-color: #0E8388; 
+    --active-color: ; 
+}
+
+.main {
+    display: flex; 
+    flex-direction: column;
+    gap: 35px; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    background-color: var(--background-color);
+    color: var(--font-color); 
+}
+
+.cont { 
+    width: 60%;
+    background-color: var(--background-color-secondary);
+    padding: 45px; 
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+
+/* main section */ 
+.main-text {
+    font-size: 32px;
+}
+
+/* resume button section */ 
+.resume-cont {
+    display: flex; 
+    justify-content: center;
+    gap: 25px; 
+}
+
+.resume-download-link {
+    background-color: var(--background-color); 
+    border: 1px solid var(--border-color);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    color: var(--font-color); 
+    border-radius: 10px;
+}
+
+.resume-download-link:hover {
+    border: 2px solid var(--highlight-color);
+}
+
+.resume-download-link:active {
+    background-color: var(--highlight-color); 
+}
+
+/* socials/images section (images taken from/hosted on fontawesome */
+ul {
+    list-style: none;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+}
+
+ul a {
+    font-size: 50px;
+}
+
+.fa-brands {
+    color: var(--font-color);
+}
+
+.fa-brands:hover {
+    opacity: 0.7;
+}
+
+/* contact form section */ 
+
+
+@media (max-width: 800px) {
+    ul {
+      flex-direction: column;
+    }
+
+    .cont {
+        width: 90%;
+    }
+
+    .main-text {
+        font-size: 24px;
+    }
+
+  }
